@@ -1,0 +1,27 @@
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "visionmatch_ml"
+version = "0.1.0"
+description = "Multimodal Vision-Language Embedding & Retrieval Evaluation Core for VisionMatch AI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch>=2.2.0",
+    "transformers>=4.40.0",
+    "pillow>=10.3.0",
+    "numpy>=1.26.0",
+    "scikit-learn>=1.4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["visionmatch_ml*"]

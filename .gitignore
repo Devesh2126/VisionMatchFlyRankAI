@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+
+# Environments & Secrets
+.env
+.env.local
+
+# ML Weights, Datasets & Artifacts
+*.pt
+*.pth
+*.bin
+*.safetensors
+mlruns/
+mlartifacts/
+datasets/raw/
+datasets/processed/
+.cache/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+
+# Docker volumes
+.docker_data/
